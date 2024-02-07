@@ -1,0 +1,155 @@
+@import 'variables';
+
+.notes-grid {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(5, 250px);
+    grid-auto-rows: 250px;
+    gap: 20px;
+    justify-content: center;
+    max-height: 550px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding: 20px;
+  }
+  
+  .note-item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    border-radius: 30px;
+    background-color: $background-color_1;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    width: 250px;
+    height: 250px;
+    transition: transform 0.3s;
+    
+    &:hover {
+      transform: scale(1.02);
+    }
+    
+    h2 {
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    
+    p {
+      font-size: 15px;
+      margin-top: 0px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      max-width: 310px;
+      word-wrap: break-word;
+    }
+  }
+  
+  .notes-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .note-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    input, textarea, button {
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid black;
+    }
+    input, textarea {
+      border: 1px solid black;
+    }
+    button {
+      border: none;
+      color: $color_1;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    
+  }
+  
+  .modal {
+    position: fixed;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $background-color_7;
+    height: auto; 
+    max-width: 300px;
+    min-width: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; 
+    padding: 20px;
+  }
+  
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .note-modal-button, .note-input {
+    position: relative;
+    font-size: 14px;
+    border-radius: 20px;
+    border: none;
+    background-color: $background-color_1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    font-family: $font-family;
+    outline: none;
+    resize: none;
+    box-sizing: border-box; 
+  }
+
+   .note-modal-button {
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    transition: opacity 0.3s, transform 0.3s;
+    cursor: pointer;
+	&:hover {
+		opacity: 0.7;
+		transform: scale(1.05);
+   }
+  }
+    .note-input.content-input {
+      width: 260px; 
+      height: 200px;
+      margin-top: 20px;
+      margin-left: 0px;
+      margin-right: 20px;
+      margin-bottom: 0px;
+    }    
+    .note-input.title-input {
+      margin-top: 10px;
+      margin-left: 0px;
+      margin-right: 20px;
+      margin-bottom: 0px;
+    }

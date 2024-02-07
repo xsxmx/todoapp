@@ -1,0 +1,81 @@
+@media (max-width: 700px) {
+    .notes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        grid-auto-rows: auto;
+        overflow-y: auto;
+    }
+
+    .note-item {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .main-section {
+        margin-top: 30vw;
+    }
+
+    .search-bar {
+        width: 40%;
+    }
+
+    .search-bar-container {
+        margin-left: 65px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    .notes-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-auto-rows: auto;
+        overflow-y: auto;
+    }
+
+    .note-item {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .main-section {
+        margin-top: 20vw;
+    }
+
+    .search-bar {
+        width: 60%;
+    }
+
+    .search-bar-container {
+        margin-left: 50px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1425px) {
+    .notes-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        grid-auto-rows: auto;
+        overflow-y: auto;
+    }
+
+    .note-item {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .search-bar {
+        width: 60%;
+    }
+
+    .search-bar-container {
+        margin-left: 20px;
+    }
+
+}
+
+@media (max-width: 1425px) {
+    .pagination-button-left,
+    .pagination-button-right {
+        display: none;
+    }
+}

@@ -1,0 +1,60 @@
+@import 'variables';
+@import 'animations';
+
+html, body {
+  background-image: url('@/static/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  margin: 0;
+  font-family: $font-family;
+  background-attachment: fixed;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.start-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('@/static/bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.app-container {
+	height: 100vh; 
+
+}
+.header-section {
+	position: fixed;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: $background-color_2;
+	width: 100%;
+}
+.main-section {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 200px;
+	z-index: 0;
+	max-height: 550px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+.footer-section {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: $background-color_2;
+	text-align: center;
+	padding: 0;
+}
