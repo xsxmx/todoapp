@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="todoappNuxt/static/favicon.ico" alt="favicon" width="300"/>
+  <img src="scr/favicon.png" alt="favicon" width="300"/>
 </p>
 
 
@@ -21,3 +21,12 @@ Aby uruchomić aplikację klienta będąc w katalogu todoappNuxt, skorzystaj z p
 npm run dev
 
 ## Aplikacja będzie dostępna pod adresem http://localhost:3000.
+
+## Screenshoots:
+
+<p align="center">
+  <img src="scr/1.png" alt="Scr 1" width="600"/><br><br>
+  <img src="scr/2.png" alt="Scr 2" width="600"/><br><br>
+  <img src="scr/3.png" alt="Scr 3" width="600"/>
+</p>
+
